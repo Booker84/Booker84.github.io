@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: 'Andika New Basic', sans-serif;
+    text-align: center;
+    letter-spacing: 0.10em;
+
 }
 
 header {
@@ -11,10 +14,10 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  
+    border-bottom: 2px solid white;
     padding: 0 1.0em;
     font-weight: bold;
-    font-size: 22px;
+    
     
 }
 
@@ -23,6 +26,7 @@ header a {
     text-decoration: none;
     border-right: 1px solid whitesmoke;
     padding: 0 0.5em;
+    font-size: 21px;
 }
 
 #nav-contact {
@@ -45,6 +49,8 @@ article {
     line-height: 1.5em;
     font-size: 1.25;
     letter-spacing: 0.10em;
+    font-weight: 500;
+    border-bottom: 2px solid white;
 }
 
 article h2 {
@@ -52,7 +58,9 @@ article h2 {
 }
 
  article img {
-     border-radius: 10%;
+     border-radius: 50%;
+     width: 50%;
+     height: 50%;
  }
 
 #about-me {
@@ -60,6 +68,44 @@ article h2 {
 }
 
 
+
+#skill-logo {
+  
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 2.0em
+    
+}
+
+
+
+.logo {
+    height:10em;
+    width: 10em;
+    padding: 5px
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background-color: mediumblue;
+    color: whitesmoke;
+    border-top: 2px solid white;
+    text-align: right;
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+   
+}
+
+footer p {
+    margin-right: 10px;
+}
 
 
 @media screen and (max-width: 600px) {
