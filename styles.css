@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Andika New Basic', sans-serif;
+}
+
+header {
+    background-color: mediumblue;
+    color: whitesmoke;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 1.0em;
+    font-weight: bold;
+    font-size: 22px;
+    
+}
+
+header a {
+    color: whitesmoke;
+    text-decoration: none;
+    border-right: 1px solid whitesmoke;
+    padding: 0 0.5em;
+}
+
+#nav-contact {
+    border: none
+}
+
+article {
+    width:100%;
+    height:50%;
+    padding-top: 2.0em;
+    padding-bottom: 2.0em;
+    background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.25;
+    letter-spacing: 0.10em;
+}
+
+article h2 {
+    font-size: 36px;
+}
+
+ article img {
+     border-radius: 10%;
+ }
+
+#about-me {
+    width:65%;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 16px;
+    }
+}
