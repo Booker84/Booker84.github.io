@@ -67,17 +67,12 @@ article h2 {
     width:65%;
 }
 
-
-
 #skill-logo {
   
     width: 60%;
     margin-left: 20%;
-    padding-bottom: 2.0em
-    
+    padding-bottom: 2.0em    
 }
-
-
 
 .logo {
     height:10em;
@@ -85,8 +80,38 @@ article h2 {
     padding: 5px
 }
 
+#projects {
+    background-color: violet;
+}
 
+#card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
+.portfolio-card {
+    width:200px;
+    height:300px;
+}
+
+.portfolio-card img {
+    width: 200px;
+    height: 200px;
+}
+
+#contact {
+    height: auto;
+    background-color: yellow;
+    padding-top: 2.0em;
+}
+
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5% 20%;
+}
 
 
 footer {
@@ -111,5 +136,15 @@ footer p {
 @media screen and (max-width: 600px) {
     header {
         font-size: 16px;
+    }
+
+    #card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-container {
+        flex-direction: column;
+        align-content: center;
     }
 }
