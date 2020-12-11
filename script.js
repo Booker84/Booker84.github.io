@@ -24,4 +24,4 @@ let quoteAppear = function () {
 
 let quoteButton = document.getElementById("quote-button");
 
-quoteButton.onclick = quoteAppear;
+quoteButton.onclick = quoteAppear; 
