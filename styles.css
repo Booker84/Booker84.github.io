@@ -10,6 +10,7 @@ body {
                          from {color:white;}
                          to {color: black;}}
 
+
 header {
     background-color: black;
     color: white;
@@ -130,6 +131,22 @@ h2 {
 .portfolio-card img {
     width: 200px;
     height: 200px;
+}
+
+#quote {
+    height: 15em;
+}
+
+#new-quote {
+    visibility: hidden;
+    font-size: 30px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 5%;
+    font-size: 26px;
 }
 
 #contact {
