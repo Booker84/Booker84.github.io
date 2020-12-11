@@ -210,6 +210,11 @@ footer p {
         align-items: center;
     }
 
+    #quote {
+        height: auto;
+        padding-bottom: 2.0em;
+    }
+
     #contact {
         display: flex;
         flex-direction: column;
