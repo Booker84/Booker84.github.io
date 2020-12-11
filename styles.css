@@ -1,14 +1,18 @@
 body {
     margin: 0;
-    font-family: 'Andika New Basic', sans-serif;
+    font-family:'Roboto', sans-serif;
     text-align: center;
-    letter-spacing: 0.10em;
 
 }
 
+@keyframes navLink { from {background-color:black;}
+                         to {background-color:white;}
+                         from {color:white;}
+                         to {color: black;}}
+
 header {
-    background-color: mediumblue;
-    color: whitesmoke;
+    background-color: black;
+    color: white;
     top: 0;
     display: flex;
     flex-direction: row;
@@ -19,15 +23,19 @@ header {
     font-weight: bold;
     position: fixed;
     width:100%;
-    
 }
 
 header a {
-    color: whitesmoke;
+    color: white;
     text-decoration: none;
-    border-right: 1px solid whitesmoke;
     padding: 0 0.5em;
     font-size: 21px;
+}
+
+header a:hover {
+        animation-name:navLink;
+        animation-duration: 2s;
+        animation-fill-mode:forwards;
 }
 
 nav {
@@ -43,7 +51,7 @@ article {
     height:50%;
     padding-top: 10.0em;
     padding-bottom: 2.0em;
-    background-image: url(images/bg2.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url(images/banner.jfif);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -53,9 +61,13 @@ article {
     text-align: center;
     line-height: 1.5em;
     font-size: 1.25;
-    letter-spacing: 0.10em;
     font-weight: 500;
     border-bottom: 2px solid white;
+    color: white;
+}
+
+h1, h2, a {
+    font-family: 'Roboto Slab', serif;
 }
 
 h2 {
@@ -73,7 +85,6 @@ h2 {
 }
 
 #skills {
-    background-color: tomato;
     padding-top: 2.0em;
     padding-bottom:2.0em;
 }
@@ -92,9 +103,11 @@ h2 {
 }
 
 #projects {
-    background-color: violet;
+    background-color:black;
     padding-top: 2.0em;
     padding-bottom: 2.0em;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 #projects p {
@@ -110,6 +123,8 @@ h2 {
 .portfolio-card {
     width:200px;
     height:300px;
+    background-color: white;
+    color: black;
 }
 
 .portfolio-card img {
@@ -119,30 +134,38 @@ h2 {
 
 #contact {
     height: 20em;
-    background-color: yellow;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(images/footer.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 2.0em;
     padding-bottom: 2.0em;
+    color: white;
 }
-
-
-
 #contact-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 5% 20%;
+    margin: 0 20%;
     padding-top: 0;
-    background-color: turquoise;
+    font-size: 24px;
+}
+#contact i {
+    color: white;
+    padding: 0 1.0em;
 }
 
+#socials i {
+    font-size: 2.0em;
+
+}
 
 footer {
     width: 100%;
     height: auto;
     bottom: 0;
-    background-color: mediumblue;
-    color: whitesmoke;
-    border-top: 2px solid white;
+    background-color: black;
+    color: white;
+    border-top: 1px solid white;
     text-align: right;
     display: flex;
     align-content: center;
@@ -160,6 +183,10 @@ footer p {
         font-size: 16px;
     }
 
+    #skills {
+       margin: 0 1.5em
+    }
+
     #card-section {
         flex-direction: column;
         align-items: center;
@@ -172,6 +199,12 @@ footer p {
         height: auto;
     }
     #contact-container {
-        flex-direction:column
+        flex-direction:column;
+        font-size:18px
+
+    }
+
+    #socials {
+        font-size: 16px;
     }
 }
